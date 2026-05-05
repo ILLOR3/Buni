@@ -26,7 +26,7 @@ function getControls(){
 
 
 
-//sorts arrays manuall, cuz  fuck "array_shuffle" because fuck me apparently the  BUILT IN FUNCTION doesnt fucking work
+//sorts arrays manuall, because the built in function doesnt seem to work
 function array_shuffle_manual(_array) { 
     var _len = array_length(_array);
     for (var i = _len - 1; i > 0; i--) {
