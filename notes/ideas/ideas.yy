@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"v1",
+  "%Name":"ideas",
+  "name":"ideas",
+  "parent":{
+    "name":"Buni",
+    "path":"Buni.yyp",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_usefulFunctions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_usefulFunctions",
+  "parent":{
+    "name":"Buni",
+    "path":"Buni.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

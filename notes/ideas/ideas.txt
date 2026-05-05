@@ -1,0 +1,14 @@
+-make it so that new difficulties increase various stats
+(and in turn, make it so that its easy and possible to do so ) for example, in harder difficulties the max_speed 
+variable for the fallingHarard might be higher, and that would be set when chosing the difficulty
+-make it so that the falling hazard gradually incerases the rate at witch it spawns (by decreasing teh timer from time to time)
+-add the "preview" state to hazards so that they are shown before spawning and can't jumpscare the player
+-make proper layers, ffixing the deoth thingy (also make the snailHazard not spawn into the collectibles layer, make anotehr layer or smth)
+-bossfight after a certain score
+-abilities with cooldown
+-endless mode after fighting bosdses
+-different arenas with different bosses and obstacles
+-add modifiers/talismans that modify your run	
+-remove hitbox fomr initial fall of fallinghazard
+-add "trebmling" to the trapskikes thingy
+-add proper animations to teh gunHazard, and make it so the firts projectile is shot earlier to its creation

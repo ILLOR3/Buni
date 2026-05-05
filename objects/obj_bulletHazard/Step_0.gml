@@ -1,0 +1,1 @@
+x+=move_speed * move_dir;
