@@ -60,3 +60,9 @@ Temporary Items
 
 # GMRT build directory
 Build
+
+#linux stuff
+*.yyz
+*.yymps
+*.cache
+*.temp
