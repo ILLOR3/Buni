@@ -1,23 +1,16 @@
 function getControls(){
 	//directional imputs
 		rightKey = keyboard_check(vk_right) + keyboard_check(ord ("D")) ; // +gamepad_button_check(0,gp_padr)
-		rightKey = clamp(rightKey , 0  ,1);//<-- this makes it so u can use multiple keys and the variable can only be 1 or 0 . works for leftjìkey aswell
+		rightKey = clamp(rightKey , 0  ,1);//<-- this makes it so u can use multiple keys and the variable can only be 1 or 0 . works for left key aswell
 		leftKey = keyboard_check(vk_left) + keyboard_check(ord ("A")); // +gamepad_button_check(0,gp_padl)
 		leftkey = clamp (leftKey , 0 , 1);
 	
 	//action imputs
-		jumpKeyPressed  = keyboard_check_pressed( vk_space); + keyboard_check_pressed(ord("W")) + keyboard_check_pressed(vk_up);  // +gamepad_button_check_pressed(0,gp_face1);
-		jumpKeyPressed = clamp(jumpKeyPressed , 0 , 1);d
+		jumpKeyPressed  = keyboard_check_pressed( vk_space) + keyboard_check_pressed(ord("W")) + keyboard_check_pressed(vk_up);  // +gamepad_button_check_pressed(0,gp_face1);
+		jumpKeyPressed = clamp(jumpKeyPressed , 0 , 1);
 
 
 }
-
-
-
-
-
-
-
 
 
 
