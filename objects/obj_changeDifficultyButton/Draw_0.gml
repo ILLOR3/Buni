@@ -1,19 +1,20 @@
-//Values based on difficulty selected
+draw_self();
+
+var diff_text = "";
+
 switch(global.difficulty)
 {
     case Difficulty.EASY:
-		move_speed = 5;
+        diff_text = "EASY";
         break;
 
     case Difficulty.NORMAL:
-		move_speed = 6;
+        diff_text = "NORMAL";
         break;
 
     case Difficulty.HARD:
-		move_speed = 7;
+        diff_text = "HARD";
         break;
 }
 
-
-//move_dir = 0
-
+draw_text(x, y, diff_text);

@@ -5,4 +5,3 @@ enum Difficulty {
 }
 
 global.difficulty = Difficulty.NORMAL;
-counter = 0;

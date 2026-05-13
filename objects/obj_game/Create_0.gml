@@ -1,4 +1,22 @@
-randomise();
+//Values based on difficulty selected
+switch(global.difficulty)
+{
+    case Difficulty.EASY:
+		fallingHazard_timer = 90;
+		generalHazard_timer = 560;
+        break;
+
+    case Difficulty.NORMAL:
+		fallingHazard_timer = 80;
+		generalHazard_timer = 520;
+        break;
+
+    case Difficulty.HARD:
+		fallingHazard_timer = 70;
+		generalHazard_timer = 490;
+        break;
+}
+
 tot_points = 0; 
 alarm[0] = fallingHazard_timer;
 fallingHazard_choiche = 0;//this is either * 0  = it falls randomly * 1 = it falls on the player  * 2 = it predicts the player movement */
