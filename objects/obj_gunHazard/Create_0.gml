@@ -1,5 +1,22 @@
-//attack_cooldown = 400
-//(already present in variable definitions)
+//Values based on difficulty selected
+switch(global.difficulty)
+{
+    case Difficulty.EASY:
+		attack_cooldown = 460;
+		move_speed = 2.8;
+        break;
+
+    case Difficulty.NORMAL:
+		attack_cooldown = 400;
+		move_speed = 3;
+        break;
+
+    case Difficulty.HARD:
+		attack_cooldown = 340;
+		move_speed = 3.2;
+        break;
+}
+
 
 
 //doesnt have "obj_hazardParent" as a harent cuz it doesnt have a hitbox itself

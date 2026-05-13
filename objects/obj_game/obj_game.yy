@@ -30,8 +30,6 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"tot_points","filters":[],"listItems":[],"multiselect":false,"name":"tot_points","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
-    {"$GMObjectProperty":"v2","%Name":"fallingHazard_timer","filters":[],"listItems":[],"multiselect":false,"name":"fallingHazard_timer","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"80","varType":0,},
-    {"$GMObjectProperty":"v2","%Name":"generalHazard_timer","filters":[],"listItems":[],"multiselect":false,"name":"generalHazard_timer","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"520","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

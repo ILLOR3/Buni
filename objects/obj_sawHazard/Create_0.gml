@@ -1,6 +1,23 @@
-//move_speed  = 3
-//stop_time = 60 
-//(both variables already present in variable definitions)
+//Values based on difficulty selected
+switch(global.difficulty)
+{
+    case Difficulty.EASY:
+		move_speed  = 2
+		stop_time = 80 
+        break;
+
+    case Difficulty.NORMAL:
+	move_speed  = 3
+	stop_time = 60 
+        break;
+
+    case Difficulty.HARD:
+		move_speed  = 3.5
+		stop_time = 40 
+        break;
+}
+
+
 min_xPos = 192;
 max_xPos = 1216;
 alarm[0]  =stop_time;

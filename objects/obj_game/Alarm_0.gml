@@ -14,4 +14,4 @@ if(fallingHazard_choiche == 2){
 }
 
 
-alarm[0] = 200;
+alarm[0] = fallingHazard_timer;
