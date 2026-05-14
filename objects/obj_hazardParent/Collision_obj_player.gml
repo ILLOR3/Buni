@@ -1,1 +1,1 @@
-//room_goto(Room_urDead);
+room_goto(Room_urDead);
