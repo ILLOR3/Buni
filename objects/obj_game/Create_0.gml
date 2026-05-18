@@ -90,3 +90,6 @@ hazard_spawn_index = 0;
 for (var i = 0; i < array_length(hazard_list); i++) {
     show_debug_message(string(hazard_list[i].hazard));
 }
+
+//spacial collectible timer
+alarm[2] = coolCollectible_timer; //15 seconds

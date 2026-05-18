@@ -1,0 +1,1 @@
+obj_game.alarm[2] = obj_game.coolCollectible_timer;
