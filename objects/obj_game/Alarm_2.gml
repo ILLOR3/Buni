@@ -1,2 +1,2 @@
-instance_create_layer( random_range(200 , 1400) , random_range(100, 800), "Instances_Collectibles", obj_coolCollectible);
-//show_debug_message("SPAWNED");
+instance_create_layer( random_range(64 , 1344) , random_range(160, 768), "Instances_Collectibles", obj_coolCollectible);
+show_debug_message("SPAWNED");
