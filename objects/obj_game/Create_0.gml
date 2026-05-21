@@ -22,64 +22,63 @@ alarm[0] = fallingHazard_timer;
 fallingHazard_choiche = 0;//this is either * 0  = it falls randomly * 1 = it falls on the player  * 2 = it predicts the player movement */
 
 alarm[1] = generalHazard_timer; //general alarm for spawning a hazard
- 
 hazard_list  = [
     { 
-        hazard: obj_sawHazard,
+        hazard: obj_sawHazard_preview,
         xPos: random_range(192 , 1216),
         yPos: 832,
 		_layer: "Instances_Hazards"
     },
     {
-        hazard: obj_pressureHazard,
+        hazard: obj_pressureHazard_preview,
         xPos: 1024,
         yPos: 640,
 		_layer: "Instances_Hazards"
     },
     {
-        hazard: obj_pressureHazard,
+        hazard: obj_pressureHazard_preview,
         xPos: 384,
         yPos: 640,
 		_layer: "Instances_Hazards"
     },
     {
-        hazard: obj_pressureHazard,
+        hazard: obj_pressureHazard_preview,
         xPos: 320,
         yPos: 256,
 		_layer: "Instances_Hazards"
     },
      {
-        hazard: obj_pressureHazard,
+        hazard: obj_pressureHazard_preview,
         xPos: 1088,
         yPos: 256,
 		_layer: "Instances_Hazards"
     },
 	{
-	hazard: obj_snailHazard,
+	hazard: obj_snailHazard_preview,
 	xPos: random_range(60, 1340),
 	yPos: random_range(126, 832),
 	_layer: "Instances_Collectibles"//its different cuz of the fact that the snail needs to be above walls n shit
 	},
 	{
-	hazard: obj_gunHazard,
+	hazard: obj_gunHazard_preview,
 	xPos: 0,
 	yPos: random_range(70 , 700),
 	_layer: "Instances_Hazards"
 	},
 	{
-	hazard: obj_gunHazard,
+	hazard: obj_gunHazard_preview,
 	xPos: 0,
 	yPos: random_range(70 , 700),
 	_layer: "Instances_Hazards"
 	},
     {
-	hazard: obj_gunHazard,
+	hazard: obj_gunHazard_preview,
 	xPos: 1336,
 	yPos: random_range(70 , 700),
 	_layer: "Instances_Hazards"
 	},
 	  {
-	hazard: obj_gunHazard,
+	hazard: obj_gunHazard_preview,
 	xPos: 1336,
 	yPos: random_range(70 , 700),
 	_layer: "Instances_Hazards"

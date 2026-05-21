@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_sawHazard_preview",
+  "%Name":"obj_snailHazard_preview",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_sawHazard_preview",
+  "name":"obj_snailHazard_preview",
   "overriddenProperties":[],
   "parent":{
     "name":"hazards_preview",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_sawHazard_preview",
-    "path":"sprites/spr_sawHazard_preview/spr_sawHazard_preview.yy",
+    "name":"spr_snailHazard_preview",
+    "path":"sprites/spr_snailHazard_preview/spr_snailHazard_preview.yy",
   },
   "spriteMaskId":null,
   "visible":true,

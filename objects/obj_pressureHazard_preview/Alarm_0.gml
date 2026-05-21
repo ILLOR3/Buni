@@ -1,0 +1,2 @@
+instance_create_layer( x  , y , "Instances_Hazards" , obj_pressureHazard);
+instance_destroy();
