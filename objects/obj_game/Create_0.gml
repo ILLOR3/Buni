@@ -1,3 +1,4 @@
+randomize();
 //Values based on difficulty selected
 switch(global.difficulty)
 {

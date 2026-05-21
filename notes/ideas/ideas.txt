@@ -12,3 +12,5 @@ variable for the fallingHarard might be higher, and that would be set when chosi
 -remove hitbox fomr initial fall of fallinghazard
 -add "trebmling" to the trapskikes thingy
 -add proper animations to teh gunHazard, and make it so the firts projectile is shot earlier to its creation
+
+-(the preview thingy coul halso be handled by having the same object, and obj_ hazard collision with player event only works if obj has ended its previews state)
