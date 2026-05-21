@@ -1,6 +1,6 @@
 // Inherit the parent event
 event_inherited();
-if (x < room_width / 2)
+if (x > room_width / 2)
 {
     sprite_index = spr_gunHazardLeft_preview;
 }
