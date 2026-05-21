@@ -1,20 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_sawHazard_preview",
+  "%Name":"obj_hazardPreview_parent",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_sawHazard_preview",
+  "name":"obj_hazardPreview_parent",
   "overriddenProperties":[],
   "parent":{
     "name":"hazards_preview",
     "path":"folders/objects/hazards_preview.yy",
   },
-  "parentObjectId":{
-    "name":"obj_hazardPreview_parent",
-    "path":"objects/obj_hazardPreview_parent/obj_hazardPreview_parent.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_sawHazard_preview",
-    "path":"sprites/spr_sawHazard_preview/spr_sawHazard_preview.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

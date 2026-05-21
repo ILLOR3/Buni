@@ -22,7 +22,7 @@ switch(global.difficulty)
 //doesnt have "obj_hazardParent" as a harent cuz it doesnt have a hitbox itself
 
 //switches to turned around frame if not on x frame and sets the shoots direction accordingly
-if( x !=0){
+if (x > room_width / 2){
 image_index = 1;
 shootDir = -1;
 }
