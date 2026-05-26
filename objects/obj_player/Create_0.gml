@@ -1,3 +1,5 @@
+//control setup
+controlsSetup();
 //movement
 	moveDIr  =  0;
 	//moveSpeed  = 8; (already present in variable definitions

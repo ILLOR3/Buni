@@ -32,7 +32,7 @@ getControls();
 		if yspd > termVel {yspd = termVel;};
 	
 		//Jump
-		if (jumpKeyPressed and place_meeting( x , y +1 , obj_wall)){
+		if (jumpKeyBuffered and place_meeting( x , y +1 , obj_wall)){ //instead of looking for "jumpkeyPRESSED" it looks for "jumpKeyBUFFERED"
 			yspd = jspd;
 		}
 	
