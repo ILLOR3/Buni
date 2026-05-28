@@ -24,30 +24,89 @@ getControls();
 	
 
 
+
+
+
+
+//__________________________________________________________________________________________________________________________________________________________________________________________
+
 //Y movement
 		//gravity
 		yspd += grav;
 	
-		//cap falling speed
+
+
+        //reset / prepare jumping variables
+if (onGround){  
+    jumpCount = 0; //resets jumps once th player touches the ground
+    jumpHoldTimer = 0;
+}else{ //if the player is in the air, make sure they can't do an extra jump
+        if(jumpCount ==0){
+            jumpCount =1;
+        }
+    
+}
+    
+        
+		//Initiate the jump
+	if (jumpKeyBuffered and jumpCount < jumpMax){ //instead of looking for "jumpkeyPRESSED" it looks for "jumpKeyBUFFERED"
+        //reset the buffer 
+        jumpKeyBuffered = false;
+        jumpKeyBufferTimer = 0;
+                   
+         //increase the number of performed jumps 
+        jumpCount ++;
+                   
+        //set the jumpHoldTimer
+        jumpHoldTimer = jumpHoldFrames[jumpCount-1]; //its -1 because we already add a jumpCount (the 1st timer in the array has index 0)
+    }
+
+//Cut off the jump by releasing the jump button
+if (!jumpKey) {
+    jumpHoldTimer = 0;
+}
+//jump based on the timer/holding of the button
+if(jumpHoldTimer >0){
+    yspd = jspd[jumpCount -1]; //its -1 because we already add a jumpCount (the 1st timer in the array has index 0)
+    
+    //count down the timer
+    jumpHoldTimer--;
+    
+}
+
+
+
+
+
+
+
+	//Y collisions and movement
+
+    
+    	//cap falling speed
 		if yspd > termVel {yspd = termVel;};
 	
-		//Jump
-		if (jumpKeyPressed and place_meeting( x , y +1 , obj_wall)){
-			yspd = jspd;
-		}
-	
-	
-	//Y collisions
-	var _subPixel = 0.5;
-	if place_meeting( x , y + yspd , obj_wall){
-		//scoots up to the wall precisely
-		var _pixelCheck = _subPixel * sign (yspd);
-		while !place_meeting( x , y + _pixelCheck , obj_wall){
-		y += _pixelCheck;
-		}
-		//set yspd to 0 to collide
-		yspd = 0;
-	}
-
+        //Collisions
+    	var _subPixel = 0.5;
+    	if place_meeting( x , y + yspd , obj_wall){
+    		//scoots up to the wall precisely
+    		var _pixelCheck = _subPixel * sign (yspd);
+    		while !place_meeting( x , y + _pixelCheck , obj_wall){ y += _pixelCheck; };
+            
+            //"Bonk" code (that doesn't make the player idle under a wall if the jump into it from below
+                if(yspd < 0){
+                    jumpHoldTimer = 0;
+                }
+            
+            
+    		//set yspd to 0 to collide
+    		yspd = 0;
+    	}
+    //set if the player is on the ground
+    if (yspd >= 0 and place_meeting( x , y +1 , obj_wall)){
+        onGround = true;
+    }else{
+        onGround = false;
+    }
 //move
 y += yspd;

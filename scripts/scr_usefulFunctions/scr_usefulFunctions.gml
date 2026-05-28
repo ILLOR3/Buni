@@ -1,3 +1,10 @@
+function controlsSetup(){
+		jumpBufferTime = 10;	//<- amount of "safe frames"
+		jumpKeyBuffered = false;
+		jumpKeyBufferTimer = 0;
+}
+
+
 function getControls(){
 	//directional imputs
 		rightKey = keyboard_check(vk_right) + keyboard_check(ord ("D")) ; // +gamepad_button_check(0,gp_padr)
@@ -5,11 +12,27 @@ function getControls(){
 		leftKey = keyboard_check(vk_left) + keyboard_check(ord ("A")); // +gamepad_button_check(0,gp_padl)
 		leftkey = clamp (leftKey , 0 , 1);
 	
+	
+	
 	//action imputs
 		jumpKeyPressed  = keyboard_check_pressed( vk_space) + keyboard_check_pressed(ord("W")) + keyboard_check_pressed(vk_up);  // +gamepad_button_check_pressed(0,gp_face1);
 		jumpKeyPressed = clamp(jumpKeyPressed , 0 , 1);
 
-
+		jumpKey = keyboard_check(vk_space) + keyboard_check(ord("W")) + keyboard_check(vk_up);
+		jumpKey = clamp(jumpKey , 0 , 1);
+			
+			//Jump key buffering
+			/*when jump key is pressed, sets a timer for an X amount of frames where its possible to jump even if not on the ground */
+			if(jumpKeyPressed){			
+				jumpKeyBufferTimer =jumpBufferTime ;
+			}
+			
+			if (jumpKeyBufferTimer > 0){
+				jumpKeyBuffered = true;
+				jumpKeyBufferTimer --; //this code executes every frame, so this ticks down from the timer constantly
+			}else{
+				jumpKeyBuffered = false;
+			}
 }
 
 
