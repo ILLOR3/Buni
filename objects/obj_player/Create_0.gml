@@ -19,7 +19,7 @@ controlsSetup();
     jspd[0] = -18; 
 
     jumpHoldFrames[1] = 8; //frames a jump can last
-    jspd[1] = -12; 
+    jspd[1] = -16; 
         
 
 
