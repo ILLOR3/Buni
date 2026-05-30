@@ -10,7 +10,7 @@ controlsSetup();
 	grav = 1.8;
 	termVel  = 15 ;
 	
-    jumpMax = 2; //max amount of jumps the player can make
+    jumpMax = 1; //max amount of jumps the player can make
     jumpCount = 0; //jump counter
     jumpHoldTimer = 0;
 

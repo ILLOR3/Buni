@@ -12,6 +12,3 @@ if(fallingHazard_choiche == 2){
         instance_create_layer(obj_player.x + obj_player.xspd, 0 , "Instances_Collectibles" ,obj_fallingHazard);
       //  show_debug_message("predict");
 }
-
-
-alarm[0] = fallingHazard_timer;
