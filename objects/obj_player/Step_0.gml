@@ -112,8 +112,6 @@ if(jumpHoldTimer >0){
                 if(yspd < 0){
                     jumpHoldTimer = 0;
                 }
-            
-            
     		//set yspd to 0 to collide
     		yspd = 0;
     	}
