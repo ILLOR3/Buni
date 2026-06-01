@@ -7,15 +7,28 @@ function setOnGround( _val = true){
         onGround = false;
         coyoteHangTimer = 0;
     }
-    
-    
 }
 
 //control setup
 controlsSetup();
+
+//sprites
+idleSpr = spr_player_idle;
+walkSpr = spr_player_walk;
+runSpr = spr_player_run;
+jumpSpr = spr_player_jump;
+
+maskSpr = spr_player_idle;
+
+
+
 //movement
-	moveDIr  =  0;
-    moveSpeed  = 8;
+    face = 1;    
+    
+	moveDir  =  0; 
+    runType = 0;
+    moveSpeed [0] = 8;
+    moveSpeed[1] = 14;
 	yspd = 0;
 	xspd = 0;
 
@@ -34,11 +47,12 @@ controlsSetup();
     jumpHoldFrames[1] = 8; //frames a jump can last
     jspd[1] = -16; 
         
-//Coyote time
-    //Hang time
-    coyoteHangFrames = 4;
-    coyoteHangTimer = 0;
-
-    //jump buffer time
-    coyoteJumpFrames = 7;
-    coyoteJumpTimer = 0;
+    //Coyote time
+        //Hang time
+        coyoteHangFrames = 4;
+        coyoteHangTimer = 0;
+    
+        //jump buffer time
+        coyoteJumpFrames = 7;
+        coyoteJumpTimer = 0;
+    

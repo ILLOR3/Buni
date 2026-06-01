@@ -21,6 +21,9 @@ function getControls(){
 		jumpKey = keyboard_check(vk_space) + keyboard_check(ord("W")) + keyboard_check(vk_up);
 		jumpKey = clamp(jumpKey , 0 , 1);
 			
+        runKey = keyboard_check(vk_shift); //more keys to be added here
+        runKey = clamp(runKey , 0 , 1);
+    
 			//Jump key buffering
 			/*when jump key is pressed, sets a timer for an X amount of frames where its possible to jump even if not on the ground */
 			if(jumpKeyPressed){			

@@ -2,10 +2,13 @@
 getControls();
 
 //X movement
-	moveDIr = rightKey - leftKey;
+	moveDir = rightKey - leftKey;
+    //get the face
+    if (moveDir != 0){face = moveDir};
 
 	//get xspd
-	xspd = moveDIr * moveSpeed;
+    runType = runKey;
+	xspd = moveDir * moveSpeed[runType];
 
 	//x collisions
 	var _subPixel = 0.5;
@@ -23,9 +26,15 @@ getControls();
 	x += xspd;
 	
 
-
-
-
+/*set sprite based on direction
+if(moveDir == 1){
+    sprite_index = asset_get_index(spr_player_right);
+}else if (moveDir == -1){
+    sprite_index = asset_get_index(spr_player_left);
+}else{ 
+    sprite_index = asset_get_index(spr_player_idle);
+}
+*/
 
 
 //__________________________________________________________________________________________________________________________________________________________________________________________
@@ -121,3 +130,20 @@ if(jumpHoldTimer >0){
     }
 //move
 y += yspd;
+
+
+
+
+
+//sprite control
+//walking
+if (abs(xspd) > 0){ sprite_index = walkSpr; };
+//running
+if(runType == 1){ sprite_index = runSpr; };         // can also be done like this;      if(abs(xspd) >= moveSpeed[1] ){ sprite_index = runSpr; };   
+//not moving
+if (xspd == 0){ sprite_index = idleSpr; };
+//in the air
+if (!onGround){ sprite_index = jumpSpr; };
+
+    //set the collision mask
+    mask_index = maskSpr;
