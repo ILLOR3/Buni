@@ -1,6 +1,11 @@
 //inputs
 getControls();
 
+//temporary reset
+if (keyboard_check(ord("R"))){
+    room_goto(Room_start)
+}
+
 //X movement
 	moveDir = rightKey - leftKey;
     //get the face
@@ -146,4 +151,4 @@ if (xspd == 0){ sprite_index = idleSpr; };
 if (!onGround){ sprite_index = jumpSpr; };
 
     //set the collision mask
-    mask_index = maskSpr;
+    //mask_index = maskSpr;

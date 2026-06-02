@@ -16,4 +16,4 @@ variable for the fallingHarard might be higher, and that would be set when chosi
 -(the preview thingy could also be handled by having the same object, and obj_ hazard collision with player event only works if obj has ended its previews state)
 
 -make it so there's different charachters witrh different abilities OR just skins, with choosable upgrades
-
+-add a stamina bar for sprinting, and maybe some collectibles can refill it
