@@ -2,18 +2,18 @@
 switch(global.difficulty)
 {
     case Difficulty.EASY:
-		move_speed  = 2
-		stop_time = 80 
+		move_speed  = 3;
+		stop_time = 80 ;
         break;
 
     case Difficulty.NORMAL:
-	move_speed  = 3
-	stop_time = 60 
+	move_speed  = 4;
+	stop_time = 60 ;
         break;
 
     case Difficulty.HARD:
-		move_speed  = 3.5
-		stop_time = 40 
+		move_speed  = 4.5;
+		stop_time = 40 ;
         break;
 }
 
@@ -26,4 +26,7 @@ stop_state = true;
 
 
 movedir = irandom_range(0 , 1);
-if (movedir == 0){movedir = -1};
+if (movedir == 0){movedir = -1} ;
+
+image_xscale = 1.6;
+image_yscale = 1.6;

@@ -5,6 +5,7 @@ function setOnGround( _val = true){
         coyoteHangTimer = coyoteHangFrames;
     }else{
         onGround = false;
+        myFloorPlat = noone;
         coyoteHangTimer = 0;
     }
 }
@@ -56,3 +57,6 @@ maskSpr = spr_player_idle;
         coyoteJumpFrames = 7;
         coyoteJumpTimer = 0;
     
+//moving platforms
+myFloorPlat = noone;
+movePlatXspd = 0;

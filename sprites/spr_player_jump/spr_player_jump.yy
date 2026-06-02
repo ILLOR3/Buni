@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"Buni",
-    "path":"Buni.yyp",
+    "name":"player",
+    "path":"folders/sprites/player.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -18,3 +18,6 @@ switch(global.difficulty)
 	dir = point_direction(  x , y , obj_player.x , obj_player.y);
 }
 */
+
+image_xscale = 0.6;
+image_yscale = 0.6;
