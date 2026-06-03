@@ -10,3 +10,9 @@ if( (x <=192 or x>=1216)and stop_state == false){
 
     
 }
+
+_counter++;
+if(_counter >= 3){
+image_index += movedir;
+_counter = 0;    
+}

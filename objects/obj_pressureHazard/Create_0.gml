@@ -13,3 +13,4 @@ switch(global.difficulty)
 		trap_delay = 40; 
         break;
 }
+pressed = false;
