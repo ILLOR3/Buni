@@ -17,3 +17,6 @@ variable for the fallingHarard might be higher, and that would be set when chosi
 
 -make it so there's different charachters witrh different abilities OR just skins, with choosable upgrades
 -add a stamina bar for sprinting, and maybe some collectibles can refill it
+-add a frame in the jump sprite when the player is sprinting (which is a little flatter than the normal one)
+-add trailing enemy
+-fix /rework obj_pressurehazard

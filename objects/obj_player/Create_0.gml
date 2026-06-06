@@ -5,12 +5,14 @@ function setOnGround( _val = true){
         coyoteHangTimer = coyoteHangFrames;
     }else{
         onGround = false;
+        myFloorPlat = noone;
         coyoteHangTimer = 0;
     }
 }
 
 //control setup
 controlsSetup();
+
 
 //sprites
 idleSpr = spr_player_idle;
@@ -31,6 +33,23 @@ maskSpr = spr_player_idle;
     moveSpeed[1] = 14;
 	yspd = 0;
 	xspd = 0;
+
+
+//stamina
+max_stamina = 100;
+display_stamina = 100;
+
+fatigued_timer = 120;
+recovery_stamina_timer = 200;
+
+fatigued = false;
+stamina_regen_index = 0;
+stamina_regen[0] = 0
+stamina_regen[1] = 0.15;
+stamina_regen[2] = 0.25;
+stamina_regen[3] = 1;
+
+stamina_boost = 0;
 
 //jumping
 	grav = 1.8;
@@ -56,3 +75,6 @@ maskSpr = spr_player_idle;
         coyoteJumpFrames = 7;
         coyoteJumpTimer = 0;
     
+//moving platforms
+myFloorPlat = noone;
+movePlatXspd = 0;
