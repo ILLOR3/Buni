@@ -1,2 +1,2 @@
-//room_goto(Room_urDead);
+room_goto(Room_urDead);
 //show_debug_message("DEAD");

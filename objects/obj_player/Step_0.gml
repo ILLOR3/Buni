@@ -176,6 +176,59 @@ if (instance_exists(myFloorPlat)){
 y += yspd;
 
 
+//final moving platform collision and movement _____________________________________________________________
+
+    // X - movePlatXspd and collisions
+    movePlatXspd = 0;
+    if (instance_exists(myFloorPlat)){movePlatXspd = myFloorPlat.xspd; };
+    
+    //move with movePlatXspd
+    if (place_meeting( x + movePlatXspd , y , obj_wall)){
+        //scoot up to the wall precisely
+        var _subPixel = 0.5;
+        var _pixelCheck = _subPixel * sign(movePlatXspd);
+        
+        while (!place_meeting(x + _pixelCheck , y , obj_wall)){
+            x += _pixelCheck
+        }
+        // set movePlatXspd to 0 to finisg collision
+        movePlatXspd = 0;
+    }
+    //move
+    x += movePlatXspd;
+        
+
+    //Y - snap myself ti myFloorPlat if it's moving vertically
+    if (instance_exists(myFloorPlat) and (myFloorPlat.yspd != 0 
+        or myFloorPlat.object_index == obj_ssMoveWall 
+        or object_is_ancestor(myFloorPlat.object_index , obj_ssMoveWall)
+        )
+      ){
+        //snap to the top of the floor platform
+        if (!place_meeting( x , myFloorPlat.bbox_top , obj_wall) and (myFloorPlat.bbox_top >= bbox_bottom - termVel) ){
+            y = myFloorPlat.bbox_top;
+        }
+        
+        //going up into a solid wall while on a  ss platform
+        if( myFloorPlat.yspd < 0 and place_meeting(x , y + myFloorPlat.yspd , obj_wall)){
+            //get pushed down through the ssPlatform
+            if(myFloorPlat.object_index == obj_ssWall  or  object_is_ancestor( myFloorPlat.object_index , obj_ssWall)){
+                //Get pushed down
+                var _subpixel = 0.25;
+                while (place_meeting( x , y + myFloorPlat.yspd , obj_wall)){y +=_subPixel; };
+                
+                //if we got pushed into a solid wall while going down, push ourselves back out
+                 while (place_meeting( x , y , obj_wall)){y -=_subPixel; };
+                
+                //round y 
+                y = round(y);
+            }
+            
+            //cancel the myFloorPlat variable
+            setOnGround(false);
+        }
+    }
+    
 
 
 
@@ -190,4 +243,44 @@ if (xspd == 0){ sprite_index = idleSpr; };
 if (!onGround){ sprite_index = jumpSpr; };
 
     //set the collision mask
-    //mask_index = maskSpr;
+    //mask_index = maskSpr;=
+
+
+
+
+
+
+
+//Stamina for the player
+
+//if the player runs and there is stamina , the available stamina decreases
+if (runType >=1 and display_stamina >0)
+ {display_stamina --;}
+
+/*if the player tries to run but there is no more stamina available, it enters the "fatigue" state, 
+where it won't be able to regen stamina nor sprint for a certain amount of time*/
+if(runType >= 1 and display_stamina <=0 and fatigued == false ) {
+        fatigued = true;
+        stamina_regen_index = 0;
+    alarm[0] = fatigued_timer;
+}
+
+//if the player isn't sprinting and isn't fatigued it regens stamina at the highest pace 
+if(runType == 0 and !fatigued){
+    stamina_regen_index = 2;}
+
+//regen the stamina (Less if recovering, none if fatigued)
+display_stamina += stamina_regen[stamina_regen_index] + stamina_boost;
+if(stamina_boost > 0){
+ stamina_boost = max(stamina_boost - 0.75, 0)
+}
+
+//sets the stamina to its max amount to prevent overlapping
+if(display_stamina >= max_stamina){
+    display_stamina = max_stamina;
+}
+
+if(display_stamina < 0){
+    display_stamina = 0;
+}
+

@@ -3,5 +3,4 @@ enum Difficulty {
     NORMAL,
     HARD
 }
-
 global.difficulty = Difficulty.NORMAL;
