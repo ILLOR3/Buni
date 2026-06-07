@@ -93,4 +93,4 @@ for (var i = 0; i < array_length(hazard_list); i++) {
 }
 
 //spacial collectible timer
-alarm[2] = coolCollectible_timer; //15 seconds
+alarm[2] = specialCollectible_timer; //15 seconds

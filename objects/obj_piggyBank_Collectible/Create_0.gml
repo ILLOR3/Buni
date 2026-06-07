@@ -13,4 +13,5 @@ switch(global.difficulty)
         break;
 }
 
+tot_points = 3;
 alarm[0] = collect_time;

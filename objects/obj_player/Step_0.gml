@@ -254,7 +254,7 @@ if (!onGround){ sprite_index = jumpSpr; };
 //Stamina for the player
 
 //if the player runs and there is stamina , the available stamina decreases
-if (runType >=1 and display_stamina >0)
+if (runType >=1 and display_stamina >0 and moveDir != 0)
  {display_stamina --;}
 
 /*if the player tries to run but there is no more stamina available, it enters the "fatigue" state, 
