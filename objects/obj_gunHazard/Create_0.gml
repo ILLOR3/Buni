@@ -23,7 +23,7 @@ switch(global.difficulty)
 
 //switches to turned around frame if not on x frame and sets the shoots direction accordingly
 if (x > room_width / 2){
-image_index = 1;
+    //shootdir is 1 by default
 shootDir = -1;
 }
 alarm[0] = attack_cooldown;
@@ -35,6 +35,4 @@ alarm[1]  =30;
 stop_state = true;
 
 
-
-movedir = irandom_range(0 , 1);
-if (movedir == 0){movedir = -1};
+movedir = choose( 1 , -1 )

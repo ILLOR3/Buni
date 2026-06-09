@@ -63,25 +63,25 @@ hazard_list  = [
 	},
 	{
 	hazard: obj_gunHazard_preview,
-	xPos: 0,
+	xPos: 32,
 	yPos: random_range(70 , 700),
 	_layer: "Instances_Hazards"
 	},
 	{
 	hazard: obj_gunHazard_preview,
-	xPos: 0,
+	xPos: 32,
 	yPos: random_range(70 , 700),
 	_layer: "Instances_Hazards"
 	},
     {
 	hazard: obj_gunHazard_preview,
-	xPos: 1336,
+	xPos: 1368,
 	yPos: random_range(70 , 700),
 	_layer: "Instances_Hazards"
 	},
 	  {
 	hazard: obj_gunHazard_preview,
-	xPos: 1336,
+	xPos: 1368,
 	yPos: random_range(70 , 700),
 	_layer: "Instances_Hazards"
 	}

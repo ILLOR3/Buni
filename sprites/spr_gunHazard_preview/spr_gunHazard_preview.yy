@@ -1,6 +1,6 @@
 {
   "$GMSprite":"v2",
-  "%Name":"spr_gunHazardRight_preview",
+  "%Name":"spr_gunHazard_preview",
   "bboxMode":0,
   "bbox_bottom":63,
   "bbox_left":0,
@@ -22,9 +22,9 @@
   "layers":[
     {"$GMImageLayer":"","%Name":"b76c3281-413c-48fa-a05d-c596c2505fe5","blendMode":0,"displayName":"default","isLocked":false,"name":"b76c3281-413c-48fa-a05d-c596c2505fe5","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_gunHazardRight_preview",
+  "name":"spr_gunHazard_preview",
   "nineSlice":null,
-  "origin":0,
+  "origin":4,
   "parent":{
     "name":"hazards_preview",
     "path":"folders/sprites/hazards_preview.yy",
@@ -34,7 +34,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"spr_gunHazardRight_preview",
+    "%Name":"spr_gunHazard_preview",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -58,7 +58,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_gunHazardRight_preview",
+    "name":"spr_gunHazard_preview",
     "playback":1,
     "playbackSpeed":15.0,
     "playbackSpeedType":0,
@@ -70,17 +70,17 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a4eb6bd4-1111-4a60-b50e-34cffbde4594","path":"sprites/spr_gunHazardRight_preview/spr_gunHazardRight_preview.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a4eb6bd4-1111-4a60-b50e-34cffbde4594","path":"sprites/spr_gunHazard_preview/spr_gunHazard_preview.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"c5d5269e-2050-412f-af44-0a3cfa060d43","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6251b94c-2b54-431b-81fb-d68f74f2be2b","path":"sprites/spr_gunHazardRight_preview/spr_gunHazardRight_preview.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6251b94c-2b54-431b-81fb-d68f74f2be2b","path":"sprites/spr_gunHazard_preview/spr_gunHazard_preview.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"3813d838-8e68-42bb-80cb-ebb1c4dba878","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
-    "yorigin":0,
+    "xorigin":32,
+    "yorigin":32,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

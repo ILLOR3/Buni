@@ -3,7 +3,7 @@ instance_destroy();
 //if it does not exist, lowers the timer of its spawn
 if(instance_exists(obj_piggyBank_Collectible)){
 obj_piggyBank_Collectible.alarm[0] +=increaseSurvivalTime;
-obj_piggyBank_Collectible.tot_points += 1;    
+obj_piggyBank_Collectible.tot_points += 2;    
 }else{
 obj_game.alarm[2] -=decreaseSpawnTime;
 }
