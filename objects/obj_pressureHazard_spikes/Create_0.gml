@@ -15,5 +15,5 @@ switch(global.difficulty)
 }
 
 holding = false;
-//hold_timer = 60;
-//(already present in variable definitions
+stopFrame = 11;
+image_direction = 1;   

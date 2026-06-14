@@ -2,18 +2,16 @@
 switch(global.difficulty)
 {
     case Difficulty.EASY:
-		move_speed = 5;
+		max_moveSpeed= 8;
         break;
 
     case Difficulty.NORMAL:
-		move_speed = 6;
+		max_moveSpeed = 9;
         break;
 
     case Difficulty.HARD:
-		move_speed = 7;
+		max_moveSpeed =10;
         break;
 }
-
-
-//move_dir = 0
-
+acceleration = 0.2;
+xspd = 0;

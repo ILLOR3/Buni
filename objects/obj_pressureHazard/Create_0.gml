@@ -14,3 +14,7 @@ switch(global.difficulty)
         break;
 }
 pressed = false;
+image_direction = 1;
+lastFrame = 6;
+
+/*water bucket, */release = false;

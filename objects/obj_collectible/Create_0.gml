@@ -4,7 +4,7 @@ switch(global.difficulty)
     case Difficulty.EASY: 
         decreaseSpawnTime = 45;
         increaseSurvivalTime = 35;
-        playerStaminaBoost = 5; 
+        playerStaminaBoost = 4.5; 
         break;
 
     case Difficulty.NORMAL:

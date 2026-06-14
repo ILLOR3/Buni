@@ -1,1 +1,4 @@
-x+=move_speed * move_dir;
+if(xspd < max_moveSpeed){
+    xspd += acceleration;
+}
+x+=xspd * move_dir;
