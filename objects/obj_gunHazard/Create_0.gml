@@ -20,7 +20,7 @@ switch(global.difficulty)
 
     case Difficulty.HARD:
 		attack_cooldown = 340;
-        break_cooldown = 0;
+        break_cooldown = 35;
 		move_speed = 4;
         break;
 }
