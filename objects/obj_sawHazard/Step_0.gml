@@ -4,15 +4,16 @@ x+=movedir*move_speed;
 }
 
 //checks if it has reached the edges of the room, in which case it stops and changes direction
-if( (x <=192 or x>=1216)and stop_state == false){
+if( (x <=leftEdge or x>=rightEdge)and stop_state == false){
     stop_state = true; // it stops
     alarm[0] = stop_time;//it stays still for "stop_time"
 
     
 }
 
-_counter++;
-if(_counter >= 3){
+//animation handling
+timeUntilNextFrame++;
+if(timeUntilNextFrame >= 3){
 image_index += movedir;
-_counter = 0;    
+timeUntilNextFrame = 0;    
 }

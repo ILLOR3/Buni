@@ -17,11 +17,12 @@ switch(global.difficulty)
         break;
 }
 
-_counter = 0;
-min_xPos = 192;
-max_xPos = 1216;
+timeUntilNextFrame = 0;
+leftEdge = 128;
+rightEdge = 1472;
 alarm[0]  =stop_time;
 stop_state = true;
+
 
 
 

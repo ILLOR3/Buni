@@ -33,26 +33,26 @@ hazard_list  = [
     },
     {
         hazard: obj_pressureHazard_preview,
-        xPos: 1024,
-        yPos: 640,
-		_layer: "Instances_Hazards"
-    },
-    {
-        hazard: obj_pressureHazard_preview,
-        xPos: 384,
-        yPos: 640,
-		_layer: "Instances_Hazards"
-    },
-    {
-        hazard: obj_pressureHazard_preview,
-        xPos: 320,
+        xPos: 448,
         yPos: 256,
+		_layer: "Instances_Hazards"
+    },
+    {
+        hazard: obj_pressureHazard_preview,
+        xPos: 1152,
+        yPos: 256,
+		_layer: "Instances_Hazards"
+    },
+    {
+        hazard: obj_pressureHazard_preview,
+        xPos: 448,
+        yPos: 640,
 		_layer: "Instances_Hazards"
     },
      {
         hazard: obj_pressureHazard_preview,
-        xPos: 1088,
-        yPos: 256,
+        xPos: 1152,
+        yPos: 640,
 		_layer: "Instances_Hazards"
     },
 	{
@@ -75,13 +75,13 @@ hazard_list  = [
 	},
     {
 	hazard: obj_gunHazard_preview,
-	xPos: 1368,
+	xPos: 1568,
 	yPos: random_range(70 , 700),
 	_layer: "Instances_Hazards"
 	},
 	  {
 	hazard: obj_gunHazard_preview,
-	xPos: 1368,
+	xPos: 1568,
 	yPos: random_range(70 , 700),
 	_layer: "Instances_Hazards"
 	}
