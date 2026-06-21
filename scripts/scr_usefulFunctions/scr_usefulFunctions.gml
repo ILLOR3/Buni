@@ -43,6 +43,26 @@ function getControls(){
 }
 
 
+function resizeViewport(){ 
+ var screen_w = window_get_width();
+var screen_h = window_get_height();
+
+// Maintain 16:9 aspect ratio with letterboxing
+var scale = min(screen_w / 1600, screen_h / 900);
+var port_w = floor(1600 * scale);
+var port_h = floor(900  * scale);
+
+// Center the viewport (letterbox bars if needed)
+var offset_x = floor((screen_w - port_w) / 2);
+var offset_y = floor((screen_h - port_h) / 2);
+
+view_xport[0] = offset_x;
+view_yport[0] = offset_y;
+view_wport[0] = port_w;
+view_hport[0] = port_h;
+
+}
+
 
 
 

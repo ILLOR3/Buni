@@ -286,4 +286,5 @@ if(display_stamina < 0){
 
 
 //optional, still gotta see if it fits within the game
+
 //move_wrap( true , false , 32)
