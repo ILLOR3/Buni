@@ -12,8 +12,8 @@
   "name":"obj_piggyBank_Collectible",
   "overriddenProperties":[],
   "parent":{
-    "name":"objects",
-    "path":"folders/objects.yy",
+    "name":"collectibles",
+    "path":"folders/objects/collectibles.yy",
   },
   "parentObjectId":null,
   "persistent":false,

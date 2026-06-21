@@ -11,6 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"objects","folderPath":"folders/objects.yy","name":"objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"collectibles","folderPath":"folders/objects/collectibles.yy","name":"collectibles","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"hazards_preview","folderPath":"folders/objects/hazards_preview.yy","name":"hazards_preview","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"hazards","folderPath":"folders/objects/hazards.yy","name":"hazards","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"menus","folderPath":"folders/objects/menus.yy","name":"menus","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -49,7 +50,6 @@
     {"id":{"name":"obj_pressureHazard_preview","path":"objects/obj_pressureHazard_preview/obj_pressureHazard_preview.yy",},},
     {"id":{"name":"obj_pressureHazard_spikes","path":"objects/obj_pressureHazard_spikes/obj_pressureHazard_spikes.yy",},},
     {"id":{"name":"obj_pressureHazard","path":"objects/obj_pressureHazard/obj_pressureHazard.yy",},},
-    {"id":{"name":"obj_reset","path":"objects/obj_reset/obj_reset.yy",},},
     {"id":{"name":"obj_sawHazard_preview","path":"objects/obj_sawHazard_preview/obj_sawHazard_preview.yy",},},
     {"id":{"name":"obj_sawHazard","path":"objects/obj_sawHazard/obj_sawHazard.yy",},},
     {"id":{"name":"obj_snailHazard_preview","path":"objects/obj_snailHazard_preview/obj_snailHazard_preview.yy",},},
