@@ -22,3 +22,4 @@ variable for the fallingHarard might be higher, and that would be set when chosi
 -fix /rework obj_pressurehazard
 -add visual feedback for obj_piggyBankcollectible lifespan
 -rework obj_gunHazard to combine in a powerful one when two meet
+-resize the stamina bar, make it into an object

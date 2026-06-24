@@ -24,8 +24,8 @@
   ],
   "name":"Room_start",
   "parent":{
-    "name":"Buni",
-    "path":"Buni.yyp",
+    "name":"Rooms",
+    "path":"folders/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
