@@ -3,7 +3,7 @@
 variable for the fallingHarard might be higher, and that would be set when chosing the difficulty
 -make it so that the falling hazard gradually incerases the rate at witch it spawns (by decreasing teh timer from time to time)
 -add the "preview" state to hazards so that they are shown before spawning and can't jumpscare the player
--make proper layers, ffixing the deoth thingy (also make the snailHazard not spawn into the collectibles layer, make anotehr layer or smth)
+-make proper layers, fixing the death thingy (also make the snailHazard not spawn into the collectibles layer, make anotehr layer or smth)
 -bossfight after a certain score
 -abilities with cooldown
 -endless mode after fighting bosdses
@@ -13,7 +13,8 @@ variable for the fallingHarard might be higher, and that would be set when chosi
 -add "trebmling" to the trapskikes thingy
 -add proper animations to teh gunHazard, and make it so the firts projectile is shot earlier to its creation
 
--(the preview thingy could also be handled by having the same object, and obj_ hazard collision with player event only works if obj has ended its previews state)
+-(the preview thingy could also be handled by having the same object, and obj_ hazard collision with player event only works 
+    if obj has ended its previews state)
 
 -make it so there's different charachters witrh different abilities OR just skins, with choosable upgrades
 -add a stamina bar for sprinting, and maybe some collectibles can refill it
