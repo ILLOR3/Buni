@@ -1,17 +1,16 @@
+// Inherit the parent event
+event_inherited();
 switch(global.difficulty)
 {
     case Difficulty.EASY:
-		collect_time = 390;
+		speedBoost = 4;
         break;
 
     case Difficulty.NORMAL:
-		collect_time = 360;
+		speedBoost = 3;
         break;
 
     case Difficulty.HARD:
-		collect_time = 330;
+		speedBoost = 3;
         break;
 }
-
-tot_points = 3;
-alarm[0] = collect_time;

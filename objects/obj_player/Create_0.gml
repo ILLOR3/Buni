@@ -34,6 +34,8 @@ maskSpr = spr_player_idle;
 	yspd = 0;
 	xspd = 0;
 
+    xspdBoost = 0;
+
 
 //stamina
 max_stamina = 100;
@@ -44,10 +46,10 @@ recovery_stamina_timer = 200;
 
 fatigued = false;
 stamina_regen_index = 0;
-stamina_regen[0] = 0
-stamina_regen[1] = 0.15;
-stamina_regen[2] = 0.25;
-stamina_regen[3] = 1;
+stamina_regen[0] = 0; //no stamina regen while fatigued
+stamina_regen[1] = 0.15; //slower regeneration if recovering
+stamina_regen[2] = 0.25; //normal max regeneration
+stamina_regen[3] = 1; //extra
 
 stamina_boost = 0;
 

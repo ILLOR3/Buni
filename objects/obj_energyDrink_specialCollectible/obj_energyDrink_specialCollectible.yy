@@ -1,21 +1,21 @@
 {
   "$GMObject":"",
-  "%Name":"obj_piggyBank_Collectible",
+  "%Name":"obj_energyDrink_specialCollectible",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_piggyBank_Collectible",
+  "name":"obj_energyDrink_specialCollectible",
   "overriddenProperties":[],
   "parent":{
     "name":"collectibles",
     "path":"folders/objects/collectibles.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_specialCollectible_parent",
+    "path":"objects/obj_specialCollectible_parent/obj_specialCollectible_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_coolCollectible",
-    "path":"sprites/spr_coolCollectible/spr_coolCollectible.yy",
+    "name":"spr_energyDrink_collectible",
+    "path":"sprites/spr_energyDrink_collectible/spr_energyDrink_collectible.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -13,7 +13,11 @@ if (keyboard_check(ord("R"))){
 
 	//get xspd
     runType = runKey;
-	xspd = moveDir * moveSpeed[runType];
+	xspd = moveDir * (moveSpeed[runType] + xspdBoost);
+     if(xspd > 0){
+     xspdBoost = max(xspdBoost - 0.05, 0)
+    }
+ 
 
 	//x collisions
 	var _subPixel = 0.5;
@@ -31,15 +35,6 @@ if (keyboard_check(ord("R"))){
 	x += xspd;
 	
 
-/*set sprite based on direction
-if(moveDir == 1){
-    sprite_index = asset_get_index(spr_player_right);
-}else if (moveDir == -1){
-    sprite_index = asset_get_index(spr_player_left);
-}else{ 
-    sprite_index = asset_get_index(spr_player_idle);
-}
-*/
 
 
 //__________________________________________________________________________________________________________________________________________________________________________________________
@@ -253,37 +248,37 @@ if (!onGround){ sprite_index = jumpSpr; };
 
 //Stamina for the player
 
-//if the player runs and there is stamina , the available stamina decreases
-if (runType >=1 and display_stamina >0 and moveDir != 0)
- {display_stamina --;}
-
-/*if the player tries to run but there is no more stamina available, it enters the "fatigue" state, 
-where it won't be able to regen stamina nor sprint for a certain amount of time*/
-if(runType >= 1 and display_stamina <=0 and fatigued == false ) {
-        fatigued = true;
-        stamina_regen_index = 0;
-    alarm[0] = fatigued_timer;
-}
-
-//if the player isn't sprinting and isn't fatigued it regens stamina at the highest pace 
-if(runType == 0 and !fatigued){
-    stamina_regen_index = 2;}
-
-//regen the stamina (Less if recovering, none if fatigued)
-display_stamina += stamina_regen[stamina_regen_index] + stamina_boost;
-if(stamina_boost > 0){
- stamina_boost = max(stamina_boost - 0.75, 0)
-}
-
-//sets the stamina to its max amount to prevent overlapping
-if(display_stamina >= max_stamina){
-    display_stamina = max_stamina;
-}
-
-if(display_stamina < 0){
-    display_stamina = 0;
-}
-
+    //if the player runs and there is stamina , the available stamina decreases
+    if (runType >=1 and display_stamina >0 and moveDir != 0)
+     {display_stamina --;}
+    
+    /*if the player tries to run but there is no more stamina available, it enters the "fatigue" state, 
+    where it won't be able to regen stamina nor sprint for a certain amount of time*/
+    if(runType >= 1 and display_stamina <=0 and fatigued == false ) {
+            fatigued = true;
+            stamina_regen_index = 0;
+        alarm[0] = fatigued_timer;
+    }
+    
+    //if the player isn't sprinting and isn't fatigued it regens stamina at the highest pace 
+    if(runType == 0 and !fatigued){
+        stamina_regen_index = 2;}
+    
+    //regen the stamina (Less if recovering, none if fatigued); plus, gaining the stamina boost
+    display_stamina += stamina_regen[stamina_regen_index] + stamina_boost;
+    if(stamina_boost > 0){
+     stamina_boost = max(stamina_boost - 0.75, 0)
+    }
+    
+    //sets the stamina to its max amount to prevent overlapping
+    if(display_stamina >= max_stamina){
+        display_stamina = max_stamina;
+    }
+    
+    if(display_stamina < 0){
+        display_stamina = 0;
+    }
+    
 
 //optional, still gotta see if it fits within the game
 
