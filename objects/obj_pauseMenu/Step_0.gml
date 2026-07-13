@@ -25,7 +25,7 @@ if (keyboard_check_pressed(vk_escape)) {
       
         
         btn_resume = instance_create_layer(
-          _x, _y - 180,
+          _x, _y - 270,
           "UI",
           obj_resumeButton_pauseMenu,
             {
@@ -34,10 +34,21 @@ if (keyboard_check_pressed(vk_escape)) {
             image_yscale: 3
             }
         );
+        
+         btn_restart = instance_create_layer(
+          _x, _y -90,
+          "UI",
+          obj_restartButton_pauseMenu,
+            {
+            buttonLabel: "restart",
+            image_xscale: 3,
+            image_yscale: 3
+            }
+        );
      
         
         btn_settings = instance_create_layer(
-          _x, _y,
+          _x, _y + 90,
           "UI",
           obj_settingsButton_pauseMenu,
             {
@@ -48,7 +59,7 @@ if (keyboard_check_pressed(vk_escape)) {
         );
         
         btn_mainMenu = instance_create_layer(
-          _x, _y+ 180,
+          _x, _y+ 270,
           "UI",
           obj_changeRoomButton,
             {
@@ -63,6 +74,7 @@ if (keyboard_check_pressed(vk_escape)) {
         btn_resume.owner   = id;
         btn_settings.owner = id;
         btn_mainMenu.owner     = id;
+        btn_restart.owner = id;
         
        
         

@@ -25,3 +25,4 @@ variable for the fallingHarard might be higher, and that would be set when chosi
 -rework obj_gunHazard to combine in a powerful one when two meet
 -resize the stamina bar, make it into an object
 -add animation for button spawning
+-add a restart button in pause menu (use room_restart or smth)
