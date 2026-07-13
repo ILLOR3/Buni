@@ -1,4 +1,5 @@
 
+
 //Sprite animation
     //if pressed and not on the last frame of the animation, proceed to the next one
     if(image_index != lastFrame and pressed == true){

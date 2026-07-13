@@ -1,4 +1,5 @@
- //sprite animation and hold-time handling
+
+//sprite animation and hold-time handling
     
     //if the current image_index is NOT the last designed one, the animation keeps going
     if(image_index != stopFrame){

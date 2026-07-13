@@ -1,3 +1,6 @@
+//skips everything if the game is paused
+if (global.paused) exit;
+    
 //inputs
 getControls();
 

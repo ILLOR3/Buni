@@ -11,8 +11,8 @@
   "name":"obj_changeRoomButton",
   "overriddenProperties":[],
   "parent":{
-    "name":"menus",
-    "path":"folders/objects/menus.yy",
+    "name":"UI",
+    "path":"folders/objects/UI.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,8 +29,10 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v2","%Name":"targetRoom","filters":[],"listItems":[],"multiselect":false,"name":"targetRoom","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
-    {"$GMObjectProperty":"v2","%Name":"buttonText","filters":[],"listItems":[],"multiselect":false,"name":"buttonText","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.0","varType":2,},
+    {"$GMObjectProperty":"v2","%Name":"targetRoom","filters":[
+        "GMRoom",
+      ],"listItems":[],"multiselect":false,"name":"targetRoom","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"noone","varType":5,},
+    {"$GMObjectProperty":"v2","%Name":"buttonLabel","filters":[],"listItems":[],"multiselect":false,"name":"buttonLabel","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"enter text","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

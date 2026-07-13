@@ -1,1 +1,1 @@
-room_goto(Room_game);
+room_goto(targetRoom);

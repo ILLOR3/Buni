@@ -1,3 +1,4 @@
+
 //checks if the object is supposed to stop, and if not it moves
 if(stop_state == false){
 x+=movedir*move_speed;

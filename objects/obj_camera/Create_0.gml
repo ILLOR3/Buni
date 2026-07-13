@@ -14,5 +14,5 @@ view_hport[0] = window_get_height();
 
 resizeViewport();
 
-//automatic fullscreen
-window_set_fullscreen(true)
+//automatic fullscreen 
+//window_set_fullscreen(true)
