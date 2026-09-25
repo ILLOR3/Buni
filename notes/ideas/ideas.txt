@@ -26,3 +26,7 @@ variable for the fallingHarard might be higher, and that would be set when chosi
 -resize the stamina bar, make it into an object
 -add animation for button spawning
 -add a restart button in pause menu (use room_restart or smth)
+
+-make supercollectible timer dependant on the difficulty BUT make it skill based too
+-make more supercollectibles
+-add atleast another map, maybe using moving platforms and/or another obstacle
