@@ -15,3 +15,10 @@ switch(global.difficulty)
 totPoints = 0;
 alarm[0] = collect_time;
 bonus_survivalTime = 0;
+
+
+//Floating
+floatBaseY = y;      // remember the "real" resting position
+floatTimer = 0;
+floatAmplitude = 10;  // how many pixels up/down
+floatSpeed = 0.05;   // how fast it oscillates

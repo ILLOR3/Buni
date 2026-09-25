@@ -19,3 +19,11 @@ switch(global.difficulty)
        collectibleStaminaBoost = 3.5; 
         break;
 }
+
+lastframe = 34;
+
+//floating
+floatBaseY = y;      // remember the "real" resting position
+floatTimer = 0;
+floatAmplitude = 6;  // how many pixels up/down
+floatSpeed = 0.05;   // how fast it oscillates

@@ -13,5 +13,5 @@ switch(global.difficulty)
 		max_moveSpeed =10;
         break;
 }
-acceleration = 0.2;
+acceleration = 0.3;
 xspd = 0;

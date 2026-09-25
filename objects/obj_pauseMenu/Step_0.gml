@@ -3,15 +3,15 @@ if (keyboard_check_pressed(vk_escape)) {
     if (!global.paused) {
         
        // Take snapshot BEFORE deactivating
-        var temp = surface_create(surface_get_width(application_surface), surface_get_height(application_surface));
-        surface_copy(temp, 0, 0, application_surface);
+        var _temp = surface_create(surface_get_width(application_surface), surface_get_height(application_surface));
+        surface_copy(_temp, 0, 0, application_surface);
 
         if (sprite_exists(frozen_sprite)) sprite_delete(frozen_sprite);
-        frozen_sprite = sprite_create_from_surface(temp, 0, 0,
-            surface_get_width(temp), surface_get_height(temp),
+        frozen_sprite = sprite_create_from_surface(_temp, 0, 0,
+            surface_get_width(_temp), surface_get_height(_temp),
             false, false, 0, 0);
 
-        surface_free(temp);
+        surface_free(_temp);
 
         global.paused = true;
         instance_deactivate_all(true); // keep obj_pause_menu alive

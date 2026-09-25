@@ -3,3 +3,7 @@ if(bonus_survivalTime > 0){
     bonus_survivalTime = max (bonus_survivalTime -1 , 0)
 }
     
+
+//floating
+floatTimer += floatSpeed;
+y = floatBaseY + sin(floatTimer) * floatAmplitude;

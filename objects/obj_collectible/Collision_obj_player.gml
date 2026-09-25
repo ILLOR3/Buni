@@ -5,8 +5,8 @@ instance_destroy();
 if(instance_exists(obj_specialCollectible_parent)){
 obj_specialCollectible_parent .bonus_survivalTime +=increaseSurvivalTime;
       if (instance_exists(obj_piggyBank_specialCollectible)){
-        obj_specialCollectible_parent.totPoints += 2;
-      }
-} else{
+        obj_piggyBank_specialCollectible.coinAnimation();
+        }
+      } else{
 obj_game.alarm[2] -=decreaseSpawnTime;
 }
