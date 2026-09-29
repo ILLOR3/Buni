@@ -6,16 +6,19 @@ switch(global.difficulty)
     case Difficulty.EASY:
 		fallingHazard_timer = 100;
 		generalHazard_timer = 560;
+        specialCollectible_timer = 700;
         break;
 
     case Difficulty.NORMAL:
 		fallingHazard_timer = 60;
 		generalHazard_timer = 520;
+        specialCollectible_timer = 800;
         break;
 
     case Difficulty.HARD:
 		fallingHazard_timer = 40 ;
 		generalHazard_timer = 490;
+        specialCollectible_timer = 950;
         break;
 }
 
@@ -153,37 +156,37 @@ switch(global.selectedMap){
     
      case Room_game_map3:
             hazard_list  = [
-    { 
-        hazard: obj_sawHazard_preview,
-        xPos: random_range(192 , 1216),
-        yPos: 832,
+    {
+        hazard: obj_pressureHazard_preview,
+        xPos: 424,
+        yPos: 128,
 		_layer: "Instances_Hazards"
     },
     {
         hazard: obj_pressureHazard_preview,
-        xPos: 448,
-        yPos: 256,
+        xPos: 1112,
+        yPos: 128,
 		_layer: "Instances_Hazards"
     },
     {
         hazard: obj_pressureHazard_preview,
-        xPos: 1152,
-        yPos: 256,
-		_layer: "Instances_Hazards"
-    },
-    {
-        hazard: obj_pressureHazard_preview,
-        xPos: 448,
-        yPos: 640,
+        xPos: 424,
+        yPos: 768,
 		_layer: "Instances_Hazards"
     },
      {
         hazard: obj_pressureHazard_preview,
-        xPos: 1152,
-        yPos: 640,
+        xPos: 1112,
+        yPos: 768,
 		_layer: "Instances_Hazards"
     },
 	{
+	hazard: obj_snailHazard_preview,
+	xPos: random_range(60, 1340),
+	yPos: random_range(126, 832),
+	_layer: "Instances_Collectibles"//its different cuz of the fact that the snail needs to be above walls n shit
+	},
+    {
 	hazard: obj_snailHazard_preview,
 	xPos: random_range(60, 1340),
 	yPos: random_range(126, 832),

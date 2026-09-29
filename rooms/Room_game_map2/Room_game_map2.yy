@@ -44,7 +44,19 @@
     {"$GMRInstanceLayer":"","%Name":"Instances_Hazards","depth":201,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_25C8EFB1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_25C8EFB1","objectId":{"name":"obj_outOfBounds","path":"objects/obj_outOfBounds/obj_outOfBounds.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":31.484375,"scaleY":1.46875,"x":-109.0,"y":900.0,},
       ],"layers":[],"name":"Instances_Hazards","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":true,"visible":true,},
-    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":301,"effectEnabled":true,"effectType":"none","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.2,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_bg","path":"sprites/spr_bg/spr_bg.yy",},"stretch":true,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.2,"vtiled":true,"x":0,"y":0,},
+    {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":301,"effectEnabled":true,"effectType":"_filter_heathaze","gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.2,"htiled":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[
+        {"name":"g_Distort1Speed","type":0,"value":"0.036",},
+        {"name":"g_Distort2Speed","type":0,"value":"0.037",},
+        {"name":"g_Distort1Scale","type":0,"value":"13.3",},
+        {"name":"g_Distort1Scale","type":0,"value":"1.3",},
+        {"name":"g_Distort2Scale","type":0,"value":"33.3",},
+        {"name":"g_Distort2Scale","type":0,"value":"3.3",},
+        {"name":"g_Distort1Amount","type":0,"value":"7",},
+        {"name":"g_Distort2Amount","type":0,"value":"7",},
+        {"name":"g_ChromaSpreadAmount","type":0,"value":"0",},
+        {"name":"g_CamOffsetScale","type":0,"value":"6",},
+        {"name":"g_DistortTexture","type":2,"value":"_filter_heathaze_noise_sprite",},
+      ],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_bg","path":"sprites/spr_bg/spr_bg.yy",},"stretch":true,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.2,"vtiled":true,"x":0,"y":0,},
   ],
   "name":"Room_game_map2",
   "parent":{

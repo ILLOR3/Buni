@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_ssMoveWall",
-    "path":"sprites/spr_ssMoveWall/spr_ssMoveWall.yy",
+    "name":"spr_ssWall",
+    "path":"sprites/spr_ssWall/spr_ssWall.yy",
   },
   "spriteMaskId":null,
   "visible":true,
