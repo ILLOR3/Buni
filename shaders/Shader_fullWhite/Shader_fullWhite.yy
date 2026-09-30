@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"Shader_fullWhite",
+  "name":"Shader_fullWhite",
+  "parent":{
+    "name":"Buni",
+    "path":"Buni.yyp",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

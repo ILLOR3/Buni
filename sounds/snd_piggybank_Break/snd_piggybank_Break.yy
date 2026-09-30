@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_piggybank_Break",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":0.8160544,
+  "exportDir":"",
+  "name":"snd_piggybank_Break",
+  "parent":{
+    "name":"collectibles",
+    "path":"folders/sounds/collectibles.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_piggybank_Break.mp3",
+  "volume":1.0,
+}

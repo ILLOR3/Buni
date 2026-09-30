@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_piggybank_Fill",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":1.0624037,
+  "exportDir":"",
+  "name":"snd_piggybank_Fill",
+  "parent":{
+    "name":"collectibles",
+    "path":"folders/sounds/collectibles.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_piggybank_Fill.mp3",
+  "volume":1.0,
+}

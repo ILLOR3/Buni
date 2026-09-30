@@ -15,5 +15,5 @@ switch(global.difficulty)
 }
 
 holding = false;
-stopFrame = 11;
+stopFrame = 10;
 image_direction = 1;   

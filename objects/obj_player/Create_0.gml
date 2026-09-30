@@ -10,6 +10,20 @@ function setOnGround( _val = true){
     }
 }
 
+//death thingy
+function heDeadBoe( obstacleType, obstacle_X, obstacle_Y, obstacleFrame){
+    global.death_xpos = x;
+    global.death_ypos = y;
+    global.killer = obstacleType;
+    global.killer_x = obstacle_X;
+    global.killer_y = obstacle_Y;
+    global.obstacleFrame = obstacleFrame;
+    global.playerIndex = self.sprite_index;
+    global.playerFrame = self.image_index
+    room_goto(Room_urDead);
+    
+    
+}
 //control setup
 controlsSetup();
 
