@@ -94,6 +94,7 @@
     {"id":{"name":"Shader_fullWhite","path":"shaders/Shader_fullWhite/Shader_fullWhite.yy",},},
     {"id":{"name":"snd_coin","path":"sounds/snd_coin/snd_coin.yy",},},
     {"id":{"name":"snd_death","path":"sounds/snd_death/snd_death.yy",},},
+    {"id":{"name":"snd_faccheGlu","path":"sounds/snd_faccheGlu/snd_faccheGlu.yy",},},
     {"id":{"name":"snd_piggybank_Break","path":"sounds/snd_piggybank_Break/snd_piggybank_Break.yy",},},
     {"id":{"name":"snd_piggybank_Fill","path":"sounds/snd_piggybank_Fill/snd_piggybank_Fill.yy",},},
     {"id":{"name":"spr_bg","path":"sprites/spr_bg/spr_bg.yy",},},
