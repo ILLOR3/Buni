@@ -1,3 +1,5 @@
+// Inherit the parent event
+event_inherited();
 enum Difficulty {
     EASY,
     NORMAL,
