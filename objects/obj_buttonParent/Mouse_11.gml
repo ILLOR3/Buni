@@ -1,2 +1,3 @@
 //going back to normal after mouse leaves
-image_index = 0;
+spriteIndex = 0;
+scale = 1;
