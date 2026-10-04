@@ -3,7 +3,6 @@
   "%Name":"obj_changeRoomButton",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_changeRoomButton",
@@ -33,7 +32,6 @@
     {"$GMObjectProperty":"v2","%Name":"targetRoom","filters":[
         "GMRoom",
       ],"listItems":[],"multiselect":false,"name":"targetRoom","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"noone","varType":5,},
-    {"$GMObjectProperty":"v2","%Name":"buttonLabel","filters":[],"listItems":[],"multiselect":false,"name":"buttonLabel","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"enter text","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

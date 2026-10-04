@@ -6,3 +6,4 @@ enum Difficulty {
     HARD
 }
 global.difficulty = Difficulty.NORMAL;
+transparency = 0.1;

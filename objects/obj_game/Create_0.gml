@@ -89,7 +89,7 @@ switch(global.selectedMap){
 ] ;
         break;
     
-     case Room_game_map2:
+     case Room_game_Skybase:
             hazard_list  = [
     { 
         hazard: obj_sawHazard_preview,
@@ -154,7 +154,7 @@ switch(global.selectedMap){
 ] ;
         break;
     
-     case Room_game_map3:
+     case Room_game_Rotor:
             hazard_list  = [
     {
         hazard: obj_pressureHazard_preview,

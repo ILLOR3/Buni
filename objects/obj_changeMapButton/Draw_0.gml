@@ -17,11 +17,11 @@ switch(arrayIndex)
         break;
 
     case 1:
-        buttonLabel = "map2";
+        buttonLabel = "Skybase ";
         break;
 
     case 2:
-        buttonLabel = "map3";
+        buttonLabel = "Rotor";
         break;
 }
 

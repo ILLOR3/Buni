@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_faccheGlu",
+  "%Name":"snd_trapOut",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,17 +10,17 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":1.8346713,
+  "duration":0.62984127,
   "exportDir":"",
-  "name":"snd_faccheGlu",
+  "name":"snd_trapOut",
   "parent":{
-    "name":"collectibles",
-    "path":"folders/sounds/collectibles.yy",
+    "name":"hazards",
+    "path":"folders/sounds/hazards.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_faccheGlu.mp3",
+  "soundFile":"snd_trapOut.mp3",
   "volume":1.0,
 }

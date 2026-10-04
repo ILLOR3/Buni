@@ -31,7 +31,8 @@ if (keyboard_check_pressed(vk_escape)) {
             {
             buttonLabel: "Resume",
             image_xscale: 3,
-            image_yscale: 3
+            image_yscale: 3,
+            transSpeed: 4
             }
         );
         
@@ -40,9 +41,10 @@ if (keyboard_check_pressed(vk_escape)) {
           "UI",
           obj_restartButton_pauseMenu,
             {
-            buttonLabel: "restart",
+            buttonLabel: "Restart",
             image_xscale: 3,
-            image_yscale: 3
+            image_yscale: 3,
+            transSpeed: 4
             }
         );
      
@@ -54,7 +56,8 @@ if (keyboard_check_pressed(vk_escape)) {
             {
             buttonLabel: "Settings",
             image_xscale: 3,
-            image_yscale: 3
+            image_yscale: 3,
+            transSpeed: 4
             }
         );
         
@@ -66,7 +69,9 @@ if (keyboard_check_pressed(vk_escape)) {
                targetRoom: Room_start,
             buttonLabel: "Main menu",
             image_xscale: 3,
-            image_yscale: 3
+            image_yscale: 3,
+            transSpeed: 4
+            
             }
         );
         

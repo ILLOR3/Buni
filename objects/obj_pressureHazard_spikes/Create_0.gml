@@ -16,4 +16,6 @@ switch(global.difficulty)
 
 holding = false;
 stopFrame = 10;
-image_direction = 1;   
+image_direction = 1; 
+
+//audio_play_sound(snd_trapOut, 0 , false , 1 , 0 , random_range(1 , 1.4));

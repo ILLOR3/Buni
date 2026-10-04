@@ -1,0 +1,3 @@
+-score
+-qui button
+-map renaming
