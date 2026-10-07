@@ -79,6 +79,7 @@
     {"id":{"name":"obj_pressureHazard_preview","path":"objects/obj_pressureHazard_preview/obj_pressureHazard_preview.yy",},},
     {"id":{"name":"obj_pressureHazard_spikes","path":"objects/obj_pressureHazard_spikes/obj_pressureHazard_spikes.yy",},},
     {"id":{"name":"obj_pressureHazard","path":"objects/obj_pressureHazard/obj_pressureHazard.yy",},},
+    {"id":{"name":"obj_quitButton","path":"objects/obj_quitButton/obj_quitButton.yy",},},
     {"id":{"name":"obj_restartButton_pauseMenu","path":"objects/obj_restartButton_pauseMenu/obj_restartButton_pauseMenu.yy",},},
     {"id":{"name":"obj_resumeButton_pauseMenu","path":"objects/obj_resumeButton_pauseMenu/obj_resumeButton_pauseMenu.yy",},},
     {"id":{"name":"obj_sawHazard_preview","path":"objects/obj_sawHazard_preview/obj_sawHazard_preview.yy",},},
