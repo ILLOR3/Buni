@@ -1,5 +1,8 @@
 randomize();
 
+global.volume_music = 1;
+global.volume_sfx = 1;
+
 //Values based on difficulty selected
 switch(global.difficulty)
 {

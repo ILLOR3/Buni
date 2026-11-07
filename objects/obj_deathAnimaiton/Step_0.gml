@@ -2,7 +2,8 @@ death_timer--;
 
 if(death_timer <=90 and image_index = 0){
     image_index = 1;
-    audio_play_sound(snd_death, 1 , 0);
+    //play death sound
+    audio_play_sound(snd_death, 1 , 0 , global.volume_music , 0 , 1);
     if(instance_exists(obj_deathHandler)){
         obj_deathHandler.fadeOut = true;
     }
